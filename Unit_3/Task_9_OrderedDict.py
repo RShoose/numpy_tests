@@ -25,3 +25,6 @@ manage_orders("add", "Apples", 2)  # Увеличиваем количество
 
 print(manage_orders("list"))   # Выводит список заказов в порядке добавления
 print("Total products:", manage_orders("total"))  # Выводит суммарное количество всех продуктов
+# Вывод:
+# [('Apples', 7), ('Bananas', 3), ('Oranges', 8)]
+# Total products: 18
