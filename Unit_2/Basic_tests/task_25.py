@@ -45,7 +45,7 @@ class Tests(AbstractTest2):
         attr_name = ""
         need_to_eval = False
         formulation = ""
-        need_print = True
+        need_print = False
         add_before = ""
         add_after = ""
 
@@ -87,7 +87,7 @@ class Tests(AbstractTest2):
         attr_name = ""
         need_to_eval = False
         formulation = ""
-        need_print = True
+        need_print = False
         add_before = ""
         add_after = ""
 
@@ -129,7 +129,7 @@ class Tests(AbstractTest2):
         attr_name = ""
         need_to_eval = False
         formulation = ""
-        need_print = True
+        need_print = False
         add_before = ""
         add_after = ""
 

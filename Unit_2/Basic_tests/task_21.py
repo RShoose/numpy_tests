@@ -18,7 +18,6 @@ def count_elements(elements):
     return counter
 
 result = count_elements(elements)
-print(result)
 """
 
 CORRECT_CODE_LANGUAGE = "Python"
