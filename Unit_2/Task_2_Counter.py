@@ -22,7 +22,7 @@ def calculate_word_frequency(text):
     text = text.lower()
     
     # Используем регулярное выражение для удаления неалфавитных символов и разбивки текста на слова
-    words = re.findall(r'\b[a-z]+\b', text)
+    words = re.findall(r'\b[a-zA-Zа-яёА-ЯЁ]+\b', text)
     
     # Считаем частоту каждого слова с использованием Counter
     word_count = Counter(words)
@@ -30,7 +30,9 @@ def calculate_word_frequency(text):
     return word_count
 
 
-text = "Hello world! Hello."
+# text = "Hello world! Hello."
+# text = 'Учится, учится и еще раз учится'
+text = 'The the кот cat сидит sits на on окне window, смотрит looks at at птиц birds.'
 result = calculate_word_frequency(text)
 print(result)
 

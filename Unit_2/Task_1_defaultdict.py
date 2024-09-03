@@ -42,7 +42,20 @@ documents = [
     "Hello again! The world is beautiful.",
     "The universe is vast and full of stars."
 ]
-
+documents = [
+    "Время летит, и каждый момент уникален.",
+    "Снова встречаемся! Жизнь полна удивительных событий.",
+    "Мир вокруг нас красив и полон загадок.",
+    "Каждый день — это новая возможность для открытий.",
+    "Светит солнце, и природа пробуждается к жизни."
+]
+documents = [
+    "Привет, мир! Welcome to the universe.",
+    "Снова привет! The world is beautiful.",
+    "Вселенная огромна и full of stars.",
+    "Каждый день — это a new opportunity.",
+    "Светит солнце, and nature awakens to life."
+]
 result = index_documents(documents)
 print(result)
 # Ожидаемый вывод (пример): defaultdict(<class 'set'>, {'hello': [0, 1], 'world': [0, 1], 'welcome': [0], 'to': [0], 'the': [1, 2], ...})

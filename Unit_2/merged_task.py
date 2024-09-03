@@ -2,7 +2,8 @@
 Анализ логов веб-сервера
 
 Задание:
-Разработайте функцию `analyze_web_logs`, которая анализирует список логов веб-сайта. Каждый лог представлен в виде кортежа, содержащего IP-адрес пользователя и URL, который он посетил. Функция должна возвращать словарь с количеством посещений каждого URL и словарь с количеством уникальных пользователей по каждому URL.
+Разработайте функцию `analyze_web_logs`, которая анализирует список логов веб-сайта. Каждый лог представлен в виде кортежа, содержащего IP-адрес пользователя и URL, который он посетил. 
+Функция должна возвращать словарь с количеством посещений каждого URL и словарь с количеством уникальных пользователей по каждому URL.
 
 Подзадачи:
 1. Используйте `Counter` для подсчета посещений каждого URL.
@@ -46,6 +47,28 @@ logs = [
     ("192.168.1.3", "https://example.com/page2"),
     ("192.168.1.4", "https://example.com/page3"),
 ]
+logs = [
+    ("10.0.0.1", "https://example.com/home"),
+    ("10.0.0.2", "https://example.com/about"),
+    ("10.0.0.3", "https://example.com/home"),
+    ("10.0.0.1", "https://example.com/contact"),
+    ("10.0.0.4", "https://example.com/about"),
+    ("10.0.0.5", "https://example.com/home"),
+]
+
+logs = [
+    ("172.16.0.1", "https://example.com/home"),
+    ("172.16.0.2", "https://example.com/about"),
+    ("172.16.0.1", "https://example.com/home"),
+    ("172.16.0.3", "https://example.com/services"),
+    ("172.16.0.4", "https://example.com/home"),
+    ("172.16.0.2", "https://example.com/contact"),
+    ("172.16.0.5", "https://example.com/services"),
+    ("172.16.0.1", "https://example.com/about"),
+    ("172.16.0.3", "https://example.com/home"),
+    ("172.16.0.6", "https://example.com/about"),
+]
+
 
 visits, unique_visitors = analyze_web_logs(logs)
 print("Visits:", visits)

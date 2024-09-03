@@ -34,6 +34,8 @@ def age_statistics(ages):
 
 # Пример использования функции
 age_list = [10, 20, 25, 30, 65, 70, 14, 22, 23, 64, 45]
+age_list = [-10, 38, 75, 30, 65, 180, 23, 0, 45]
+age_list = [23, 45, 67, 12, 34, 89, 56, 78, 90, 5]
 result = age_statistics(age_list)
 print(result)
 # Ожидаемый вывод: defaultdict(<class 'list'>, {'children': [10, 14], 'youth': [20, 22, 23], 'adults': [25, 30, 64, 45], 'seniors': [65, 70]})

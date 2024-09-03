@@ -24,7 +24,9 @@ def count_elements(elements):
     # Counter сам по себе является словарем, поэтому можем его напрямую вернуть
     return counter
 
-elements = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
+# elements = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
+# elements = [1, 2, 3, 4,]
+elements = [10, 2, 2, 3, 30, 30, 4, 40, 40, 4]
 result = count_elements(elements)
 print(result)
 
