@@ -39,22 +39,22 @@ def analyze_web_logs(logs):
     return url_visits, unique_ip_counts
 
 # Пример использования функции
-logs = [
+"""logs = [
     ("192.168.1.1", "https://example.com/page1"),
     ("192.168.1.1", "https://example.com/page1"),
     ("192.168.1.2", "https://example.com/page1"),
     ("192.168.1.1", "https://example.com/page2"),
     ("192.168.1.3", "https://example.com/page2"),
     ("192.168.1.4", "https://example.com/page3"),
-]
-logs = [
+]"""
+"""logs = [
     ("10.0.0.1", "https://example.com/home"),
     ("10.0.0.2", "https://example.com/about"),
     ("10.0.0.3", "https://example.com/home"),
     ("10.0.0.1", "https://example.com/contact"),
     ("10.0.0.4", "https://example.com/about"),
     ("10.0.0.5", "https://example.com/home"),
-]
+]"""
 
 logs = [
     ("172.16.0.1", "https://example.com/home"),
