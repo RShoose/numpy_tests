@@ -37,7 +37,7 @@ def index_documents(documents):
     return word_index
 
 # Пример использования функции
-documents = [
+"""documents = [
     "Hello world, welcome to the universe.",
     "Hello again! The world is beautiful.",
     "The universe is vast and full of stars."
@@ -48,7 +48,7 @@ documents = [
     "Мир вокруг нас красив и полон загадок.",
     "Каждый день — это новая возможность для открытий.",
     "Светит солнце, и природа пробуждается к жизни."
-]
+]"""
 documents = [
     "Привет, мир! Welcome to the universe.",
     "Снова привет! The world is beautiful.",

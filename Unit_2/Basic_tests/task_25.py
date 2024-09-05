@@ -29,8 +29,8 @@ def analyze_web_logs(logs):
     
     
 visits, unique_visitors = analyze_web_logs(logs)
-print("Visits:", visits)
-print("Unique Visitors Per URL:", unique_visitors)
+print("количество посещений:", visits)
+print("количество уникальных пользователей по каждому URL.:", unique_visitors)
 """
 
 CORRECT_CODE_LANGUAGE = "Python"
