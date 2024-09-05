@@ -4,7 +4,10 @@
 
 import numpy as np
 # Создание массива
-array_2 = np.array([[2, 4, 6], [8, 10, 12]], dtype=np.int32)
+list_numbers = [[2, 4, 6], [8, 10, 12]]
+list_numbers = [[2, 4, 6, 8, 10, 12]]
+list_numbers = [[[2, 4], [6, 8]], [[10, 12], [12, 13]], [[13, 14], [14, 15]]]
+array_2 = np.array(list_numbers, dtype=np.int32)
 
 print("Форма массива:", array_2.shape)
 print("Размер массива:", array_2.size)
