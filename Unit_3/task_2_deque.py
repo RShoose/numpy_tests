@@ -10,11 +10,14 @@
 
 from collections import deque
 
-def server_monitor(statuses, capacity=10):
-    dq = deque(maxlen=capacity)
+def server_monitor(statuses):
+    dq = deque(maxlen=10)
     dq.extend(statuses)
     online_count = sum(1 for status in dq if status == 'online')
     return (online_count / len(dq)) * 100
 
 statuses = ["online", "online", "offline", "online", "online", "offline", "online", "online", "online", "online"]
-print(f"Server online {server_monitor(statuses)}% of the time.")
+statuses = ["online", "online", "offline", "offline", "offline", "offline", "online", "online", "online", "online"]
+statuses = ["online", "online", "offline", "offline", "offline", "offline", "online"]
+print(f"Server online {round(server_monitor(statuses))}% of the time.")
+

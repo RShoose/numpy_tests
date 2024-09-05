@@ -11,7 +11,7 @@ from collections import deque
 
 def process_clients(clients):
     queue = deque()
-    for index, client in enumerate(clients):
+    for index, client in enumerate(clients, 1):
         if index % 2 == 0:
             # Индекс четный, добавляем в начало очереди
             queue.appendleft(client)
@@ -21,4 +21,5 @@ def process_clients(clients):
     return list(queue)
 
 clients = ["Alice", "Bob", "Charlie", "David"]
+# clients = ["Андрей", "Степан", "Олег", "Владимир", "Олег"]
 print(process_clients(clients))  # Верный вывод: ['Charlie', 'Alice', 'Bob', 'David']
