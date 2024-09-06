@@ -3,6 +3,7 @@
 
 import numpy as np
 def shuffle_array(array):
+    array = np.array(array)
     np.random.shuffle(array)
     return array
 
