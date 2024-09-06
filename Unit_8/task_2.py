@@ -3,9 +3,16 @@
 
 import numpy as np
 def cross_product(v1, v2):
+    v1 = np.array(v1)
+    v2 = np.array(v2)
     return np.cross(v1, v2)
 
 # Пример использования
-v1 = np.array([1, 2, 3])
-v2 = np.array([4, 5, 6])
+v1 = [1, 2, 3]
+v2 = [4, 5, 6]
+
+v1 = [1, 6]
+v2 = [4, 8]
+
+
 print(cross_product(v1, v2))  # Output: [-3 6 -3]
