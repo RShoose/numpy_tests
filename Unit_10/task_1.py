@@ -10,15 +10,17 @@
 from collections import deque
 import numpy as np
 
-def sliding_window_means(data, window_size=3):
-    d = deque(maxlen=window_size)
+def sliding_window_means(data):
+    data = np.array(data)
+    d = deque(maxlen=4)
     means = []
     for num in data:
         d.append(num)
-        if len(d) == window_size:
+        if len(d) == 4:
             means.append(np.mean(d))
     return means
 
 # Пример использования
-data = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-print(sliding_window_means(data, 4))
+data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+data = [45, 78, 23, 56, 45, 34, 56, 98]
+print(sliding_window_means(data))

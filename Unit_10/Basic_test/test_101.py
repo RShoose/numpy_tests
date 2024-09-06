@@ -9,19 +9,19 @@ from AbstractTest2 import AbstractTest2, RunCode, process, wrapper
 
 CORRECT_CODE = r"""
 from collections import deque
+import numpy as np
 
-def process_clients(clients):
-    queue = deque()
-    for index, client in enumerate(clients, 1):
-        if index % 2 == 0:
-            # Индекс четный, добавляем в начало очереди
-            queue.appendleft(client)
-        else:
-            # Индекс нечетный, добавляем в конец очереди
-            queue.append(client)
-    return list(queue)
+def sliding_window_means(data):
+    data = np.array(data)
+    d = deque(maxlen=4)
+    means = []
+    for num in data:
+        d.append(num)
+        if len(d) == 4:
+            means.append(np.mean(d))
+    return means
 
-result = process_clients(clients)
+result = sliding_window_means(data)
 
 """
 
@@ -32,7 +32,7 @@ class Tests(AbstractTest2):
     def test_1(self):
         class_name = ""
         class_args = ""
-        method_name = "process_clients"
+        method_name = "sliding_window_means"
         var_name = ""
         attr_name = ""
         need_to_eval = False
@@ -42,7 +42,7 @@ class Tests(AbstractTest2):
         add_after = ""
 
         arguments = {
-            "clients":["Alice", "Bob", "Charlie", "David"]
+            "data": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         }
 
         fake_arguments = {}
@@ -67,7 +67,7 @@ class Tests(AbstractTest2):
     def test_2(self):
         class_name = ""
         class_args = ""
-        method_name = "process_clients"
+        method_name = "sliding_window_means"
         var_name = ""
         attr_name = ""
         need_to_eval = False
@@ -77,7 +77,7 @@ class Tests(AbstractTest2):
         add_after = ""
 
         arguments = {
-            "clients":["Андрей", "Степан", "Олег", "Владимир", "Олег"]
+            "data" : [45, 78, 23, 56, 45, 34, 56, 98]
         }
 
         fake_arguments = {}

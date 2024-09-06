@@ -9,6 +9,7 @@
 
 from collections import deque
 import numpy as np
+np.random.seed(21)
 
 def exponential_smoothing(data, alpha=0.1):
     smoothed_data = []
@@ -20,6 +21,7 @@ def exponential_smoothing(data, alpha=0.1):
     return np.array(smoothed_data)  # Возвращаем NumPy массив для удобства
 
 # Пример использования
-time_series = np.random.rand(100)
+time_series = np.random.rand(10)
+print(time_series)
 smoothed_series = exponential_smoothing(time_series)
 print(smoothed_series)
