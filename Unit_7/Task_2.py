@@ -10,5 +10,16 @@ def multiply_matrices(mat1, mat2):
     return np.dot(mat1, mat2)
 
 # Пример использования функции
-print(multiply_matrices([[1, 2], [3, 4]], [[2, 0], [1, 2]]))  # Output: [[ 4  4]
+arr1 = [[1, 2], [3, 4]]
+arr2 = [[2, 0], [1, 2]]
+
+
+arr1 = [1, 2]
+arr2 = [2, 0]
+
+
+arr1 = [[[1, 2], [4, 5]], [[5, 6], [7, 8]]]
+arr2 = [2, 0] 
+
+print(multiply_matrices(arr1, arr2))  # Output: [[ 4  4]
                                                                #         [10  8]]

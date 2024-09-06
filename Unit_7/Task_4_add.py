@@ -9,4 +9,10 @@ def merge_arrays_unique(arr1, arr2):
     return np.unique(np.concatenate((arr1, arr2)))
 
 # Пример использования функции
-print(merge_arrays_unique([1, 2, 3], [3, 4, 5]))  # Output: [1 2 3 4 5]
+arr1 = [1, 2, 3]
+arr2 = [3, 5, 6]
+
+arr1 = [[1, 2, 3], [3, 4, 5]]
+arr2 = [[3, 4, 5], [5, 6, 7]]
+
+print(merge_arrays_unique(arr1, arr2))  # Output: [1 2 3 4 5]

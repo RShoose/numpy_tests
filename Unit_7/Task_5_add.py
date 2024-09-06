@@ -20,4 +20,5 @@ def filter_elements_3d(arr):
 
 # Пример входных данных и вызов функции
 example_3d_array = [[[1, 2, 3], [4, 5, 6]], [[7, 8, 9, 10], [10, 11, 12, 13]]]
+example_3d_array = [[[7, 9, 6], [10, 11, 12]], [[2, 8, 6], [10, 15]]]
 print(filter_elements_3d(example_3d_array))

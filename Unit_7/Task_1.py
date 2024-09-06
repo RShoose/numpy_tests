@@ -12,4 +12,10 @@ def sum_arrays(arr1, arr2):
     return arr1 + arr2
 
 # Пример использования функции
-print(sum_arrays([1, 2, 3], [4, 5, 6]))  # Output: [5 7 9]
+arr1 = [1, 2, 3]
+arr2 = [4, 5, 6]
+
+arr1 = [7, 9, 3]
+arr2 = [4, 8, 5]
+
+print(sum_arrays(arr1, arr2))  # Output: [5 7 9]

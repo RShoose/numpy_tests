@@ -9,6 +9,9 @@ def transpose_matrix(matrix):
     return matrix.T
 
 # Пример использования функции
-print(transpose_matrix([[1, 2, 3], [4, 5, 6]]))  # Output: [[1 4]
+matrix = [[1, 2, 3], [4, 5, 6]]
+matrix = [[[4, 5, 6], [9, 8, 7]], [[6, 4, 5], [4, 7, 9]], [[1, 5, 4], [7, 5, 6]]]
+matrix = [[1, 2], [3, 4], [5, 6]]
+print(transpose_matrix(matrix))  # Output: [[1 4]
                                                   #          [2 5]
                                                   #          [3 6]]
